@@ -250,7 +250,7 @@ void wifi_init_sta(void)
 }
 
 
-#define WEB_SERVER "http://192.168.0.2:8000/upload"
+#define WEB_SERVER "http://192.168.0.18:8000/upload"
 
 // Function to POST image to a web server
 void http_post_image(camera_fb_t *pic) //pic pointer to the picture 
@@ -284,7 +284,6 @@ void http_post_image(camera_fb_t *pic) //pic pointer to the picture
 
 void app_main(void)
 {
-
     // Initialize NVS (required for WIFI)
     esp_err_t ret = nvs_flash_init();
     if (ret == ESP_ERR_NVS_NEW_VERSION_FOUND) {

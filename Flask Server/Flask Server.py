@@ -5,7 +5,7 @@ import os
 app = Flask(__name__)
 
 # Create uploads directory if it doesn't exist
-UPLOAD_FOLDER = 'C:\\Users\\zhaoy\\Desktop\\IoT\\Flask Server\\Uploads'
+UPLOAD_FOLDER = 'C:\\Users\\zhaoy\\Desktop\\IoT\\HMI OCR\\Flask Server\\Uploads'
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 @app.route('/upload', methods=['POST'])
@@ -84,5 +84,5 @@ def index():
 
 if __name__ == '__main__':
     print("Starting ESP32 Camera Server...")
-    print("View the camera feed at: http://192.168.0.2:8000")
+    print("View the camera feed at: http://192.168.0.18:8000")
     app.run(host='0.0.0.0', port=8000, debug=True)

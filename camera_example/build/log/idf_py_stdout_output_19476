@@ -1,0 +1,80 @@
+[0/1] Re-running CMake...
+-- ccache will be used for faster recompilation
+-- Building ESP-IDF components for target esp32
+NOTICE: Processing 3 dependencies:
+NOTICE: [1/3] espressif/esp32-camera (2.1.0)
+NOTICE: [2/3] espressif/esp_jpeg (1.3.1)
+NOTICE: [3/3] idf (5.0.1)
+-- Project sdkconfig file C:/Users/zhaoy/Desktop/IoT/HMI OCR/camera_example/sdkconfig
+Loading defaults file C:/Users/zhaoy/Desktop/IoT/HMI OCR/camera_example/sdkconfig.defaults...
+C:/Users/zhaoy/Desktop/IoT/HMI OCR/camera_example/sdkconfig.defaults:1 CONFIG_ESP32_DEFAULT_CPU_FREQ_240 was replaced with CONFIG_ESP_DEFAULT_CPU_FREQ_MHZ_240
+C:/Users/zhaoy/Desktop/IoT/HMI OCR/camera_example/sdkconfig.defaults:13 CONFIG_SPIRAM_SUPPORT was replaced with CONFIG_SPIRAM
+C:/Users/zhaoy/Desktop/IoT/HMI OCR/camera_example/sdkconfig.defaults:14 CONFIG_ESP32_SPIRAM_SUPPORT was replaced with CONFIG_SPIRAM
+-- App "camera_example" version: 7e680a5-dirty
+-- Adding linker script C:/Users/zhaoy/Desktop/IoT/HMI OCR/camera_example/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.0.1/esp-idf/components/esp_system/ld/esp32/sections.ld.in
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.0.1/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.0.1/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.0.1/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.0.1/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.0.1/esp-idf/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.0.1/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- Components: app_update bootloader bootloader_support cxx driver efuse esp-tls esp_app_format esp_common esp_event esp_http_client esp_hw_support esp_netif esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espressif__esp32-camera espressif__esp_jpeg esptool_py freertos hal heap http_parser log lwip main mbedtls newlib nvs_flash partition_table pthread soc spi_flash tcp_transport vfs wpa_supplicant xtensa
+-- Component paths: C:/Espressif/frameworks/esp-idf-v5.0.1/esp-idf/components/app_update C:/Espressif/frameworks/esp-idf-v5.0.1/esp-idf/components/bootloader C:/Espressif/frameworks/esp-idf-v5.0.1/esp-idf/components/bootloader_support C:/Espressif/frameworks/esp-idf-v5.0.1/esp-idf/components/cxx C:/Espressif/frameworks/esp-idf-v5.0.1/esp-idf/components/driver C:/Espressif/frameworks/esp-idf-v5.0.1/esp-idf/components/efuse C:/Espressif/frameworks/esp-idf-v5.0.1/esp-idf/components/esp-tls C:/Espressif/frameworks/esp-idf-v5.0.1/esp-idf/components/esp_app_format C:/Espressif/frameworks/esp-idf-v5.0.1/esp-idf/components/esp_common C:/Espressif/frameworks/esp-idf-v5.0.1/esp-idf/components/esp_event C:/Espressif/frameworks/esp-idf-v5.0.1/esp-idf/components/esp_http_client C:/Espressif/frameworks/esp-idf-v5.0.1/esp-idf/components/esp_hw_support C:/Espressif/frameworks/esp-idf-v5.0.1/esp-idf/components/esp_netif C:/Espressif/frameworks/esp-idf-v5.0.1/esp-idf/components/esp_partition C:/Espressif/frameworks/esp-idf-v5.0.1/esp-idf/components/esp_phy C:/Espressif/frameworks/esp-idf-v5.0.1/esp-idf/components/esp_pm C:/Espressif/frameworks/esp-idf-v5.0.1/esp-idf/components/esp_psram C:/Espressif/frameworks/esp-idf-v5.0.1/esp-idf/components/esp_ringbuf C:/Espressif/frameworks/esp-idf-v5.0.1/esp-idf/components/esp_rom C:/Espressif/frameworks/esp-idf-v5.0.1/esp-idf/components/esp_system C:/Espressif/frameworks/esp-idf-v5.0.1/esp-idf/components/esp_timer C:/Espressif/frameworks/esp-idf-v5.0.1/esp-idf/components/esp_wifi C:/Users/zhaoy/Desktop/IoT/HMI OCR/camera_example/managed_components/espressif__esp32-camera C:/Users/zhaoy/Desktop/IoT/HMI OCR/camera_example/managed_components/espressif__esp_jpeg C:/Espressif/frameworks/esp-idf-v5.0.1/esp-idf/components/esptool_py C:/Espressif/frameworks/esp-idf-v5.0.1/esp-idf/components/freertos C:/Espressif/frameworks/esp-idf-v5.0.1/esp-idf/components/hal C:/Espressif/frameworks/esp-idf-v5.0.1/esp-idf/components/heap C:/Espressif/frameworks/esp-idf-v5.0.1/esp-idf/components/http_parser C:/Espressif/frameworks/esp-idf-v5.0.1/esp-idf/components/log C:/Espressif/frameworks/esp-idf-v5.0.1/esp-idf/components/lwip C:/Users/zhaoy/Desktop/IoT/HMI OCR/camera_example/main C:/Espressif/frameworks/esp-idf-v5.0.1/esp-idf/components/mbedtls C:/Espressif/frameworks/esp-idf-v5.0.1/esp-idf/components/newlib C:/Espressif/frameworks/esp-idf-v5.0.1/esp-idf/components/nvs_flash C:/Espressif/frameworks/esp-idf-v5.0.1/esp-idf/components/partition_table C:/Espressif/frameworks/esp-idf-v5.0.1/esp-idf/components/pthread C:/Espressif/frameworks/esp-idf-v5.0.1/esp-idf/components/soc C:/Espressif/frameworks/esp-idf-v5.0.1/esp-idf/components/spi_flash C:/Espressif/frameworks/esp-idf-v5.0.1/esp-idf/components/tcp_transport C:/Espressif/frameworks/esp-idf-v5.0.1/esp-idf/components/vfs C:/Espressif/frameworks/esp-idf-v5.0.1/esp-idf/components/wpa_supplicant C:/Espressif/frameworks/esp-idf-v5.0.1/esp-idf/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/zhaoy/Desktop/IoT/HMI OCR/camera_example/build
+[1/11] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D "C:\Users\zhaoy\Desktop\IoT\HMI OCR\camera_example\build\bootloader\esp-idf\esptool_py" && C:\Users\zhaoy\.espressif\python_env\idf5.0_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.0.1/esp-idf/components/partition_table/check_sizes.py --offset 0x10000 bootloader 0x1000 "C:/Users/zhaoy/Desktop/IoT/HMI OCR/camera_example/build/bootloader/bootloader.bin""
+Bootloader binary size 0x6de0 bytes. 0x8220 bytes (54%) free.
+[2/9] Building C object esp-idf/esp_app_format/CMakeFiles/__idf_esp_app_format.dir/esp_app_desc.c.obj
+[3/9] Linking C static library esp-idf\esp_app_format\libesp_app_format.a
+[4/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/take_picture.c.obj
+C:/Users/zhaoy/Desktop/IoT/HMI OCR/camera_example/main/take_picture.c:90: warning: "CAM_PIN_PWDN" redefined
+   90 | #define CAM_PIN_PWDN 32
+      | 
+C:/Users/zhaoy/Desktop/IoT/HMI OCR/camera_example/main/take_picture.c:67: note: this is the location of the previous definition
+   67 | #define CAM_PIN_PWDN -1  //power down is not used
+      | 
+C:/Users/zhaoy/Desktop/IoT/HMI OCR/camera_example/main/take_picture.c:92: warning: "CAM_PIN_XCLK" redefined
+   92 | #define CAM_PIN_XCLK 0
+      | 
+C:/Users/zhaoy/Desktop/IoT/HMI OCR/camera_example/main/take_picture.c:69: note: this is the location of the previous definition
+   69 | #define CAM_PIN_XCLK 21
+      | 
+C:/Users/zhaoy/Desktop/IoT/HMI OCR/camera_example/main/take_picture.c:100: warning: "CAM_PIN_D3" redefined
+  100 | #define CAM_PIN_D3 21
+      | 
+C:/Users/zhaoy/Desktop/IoT/HMI OCR/camera_example/main/take_picture.c:77: note: this is the location of the previous definition
+   77 | #define CAM_PIN_D3 19
+      | 
+C:/Users/zhaoy/Desktop/IoT/HMI OCR/camera_example/main/take_picture.c:101: warning: "CAM_PIN_D2" redefined
+  101 | #define CAM_PIN_D2 19
+      | 
+C:/Users/zhaoy/Desktop/IoT/HMI OCR/camera_example/main/take_picture.c:78: note: this is the location of the previous definition
+   78 | #define CAM_PIN_D2 18
+      | 
+C:/Users/zhaoy/Desktop/IoT/HMI OCR/camera_example/main/take_picture.c:102: warning: "CAM_PIN_D1" redefined
+  102 | #define CAM_PIN_D1 18
+      | 
+C:/Users/zhaoy/Desktop/IoT/HMI OCR/camera_example/main/take_picture.c:79: note: this is the location of the previous definition
+   79 | #define CAM_PIN_D1 5
+      | 
+C:/Users/zhaoy/Desktop/IoT/HMI OCR/camera_example/main/take_picture.c:103: warning: "CAM_PIN_D0" redefined
+  103 | #define CAM_PIN_D0 5
+      | 
+C:/Users/zhaoy/Desktop/IoT/HMI OCR/camera_example/main/take_picture.c:80: note: this is the location of the previous definition
+   80 | #define CAM_PIN_D0 4
+      | 
+[5/9] Linking C static library esp-idf\main\libmain.a
+[6/9] Generating ld/sections.ld
+[7/9] Linking CXX executable camera_example.elf
+[8/9] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 25 ELF sections
+Successfully created esp32 image.
+Generated C:/Users/zhaoy/Desktop/IoT/HMI OCR/camera_example/build/camera_example.bin
+[9/9] cmd.exe /C "cd /D "C:\Users\zhaoy\Desktop\IoT\HMI OCR\camera_example\build\esp-idf\esptool_py" && C:\Users\zhaoy\.espressif\python_env\idf5.0_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.0.1/esp-idf/components/partition_table/check_sizes.py --offset 0x10000 partition --type app "C:/Users/zhaoy/Desktop/IoT/HMI OCR/camera_example/build/partition_table/partition-table.bin" "C:/Users/zhaoy/Desktop/IoT/HMI OCR/camera_example/build/camera_example.bin""
+camera_example.bin binary size 0xfae70 bytes. Smallest app partition is 0x100000 bytes. 0x5190 bytes (2%) free.
+Warning: The smallest app partition is nearly full (2% free space left)!
