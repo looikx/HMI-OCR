@@ -1,0 +1,12 @@
+-- Found Git: C:/Users/zhaoy/.espressif/tools/idf-git/2.39.2/cmd/git.exe (found version "2.39.2.windows.1") 
+-- The C compiler identification is GNU 11.2.0
+-- The CXX compiler identification is GNU 11.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: C:/Users/zhaoy/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc.exe
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - failed
+-- Check for working C compiler: C:/Users/zhaoy/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc.exe
+-- Check for working C compiler: C:/Users/zhaoy/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc.exe - broken
+-- Configuring incomplete, errors occurred!
+See also "C:/Users/zhaoy/Desktop/IoT/HMI OCR/build/CMakeFiles/CMakeOutput.log".
+See also "C:/Users/zhaoy/Desktop/IoT/HMI OCR/build/CMakeFiles/CMakeError.log".

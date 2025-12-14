@@ -1,0 +1,124 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D "C:\Users\zhaoy\Desktop\IoT\HMI OCR\camera_example\build\bootloader\esp-idf\esptool_py" && C:\Users\zhaoy\.espressif\python_env\idf5.0_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.0.1/esp-idf/components/partition_table/check_sizes.py --offset 0x10000 bootloader 0x1000 "C:/Users/zhaoy/Desktop/IoT/HMI OCR/camera_example/build/bootloader/bootloader.bin""
+Bootloader binary size 0x6de0 bytes. 0x8220 bytes (54%) free.
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/take_picture.c.obj
+C:/Users/zhaoy/Desktop/IoT/HMI OCR/camera_example/main/take_picture.c:90: warning: "CAM_PIN_PWDN" redefined
+   90 | #define CAM_PIN_PWDN 32
+      | 
+C:/Users/zhaoy/Desktop/IoT/HMI OCR/camera_example/main/take_picture.c:67: note: this is the location of the previous definition
+   67 | #define CAM_PIN_PWDN -1  //power down is not used
+      | 
+C:/Users/zhaoy/Desktop/IoT/HMI OCR/camera_example/main/take_picture.c:92: warning: "CAM_PIN_XCLK" redefined
+   92 | #define CAM_PIN_XCLK 0
+      | 
+C:/Users/zhaoy/Desktop/IoT/HMI OCR/camera_example/main/take_picture.c:69: note: this is the location of the previous definition
+   69 | #define CAM_PIN_XCLK 21
+      | 
+C:/Users/zhaoy/Desktop/IoT/HMI OCR/camera_example/main/take_picture.c:100: warning: "CAM_PIN_D3" redefined
+  100 | #define CAM_PIN_D3 21
+      | 
+C:/Users/zhaoy/Desktop/IoT/HMI OCR/camera_example/main/take_picture.c:77: note: this is the location of the previous definition
+   77 | #define CAM_PIN_D3 19
+      | 
+C:/Users/zhaoy/Desktop/IoT/HMI OCR/camera_example/main/take_picture.c:101: warning: "CAM_PIN_D2" redefined
+  101 | #define CAM_PIN_D2 19
+      | 
+C:/Users/zhaoy/Desktop/IoT/HMI OCR/camera_example/main/take_picture.c:78: note: this is the location of the previous definition
+   78 | #define CAM_PIN_D2 18
+      | 
+C:/Users/zhaoy/Desktop/IoT/HMI OCR/camera_example/main/take_picture.c:102: warning: "CAM_PIN_D1" redefined
+  102 | #define CAM_PIN_D1 18
+      | 
+C:/Users/zhaoy/Desktop/IoT/HMI OCR/camera_example/main/take_picture.c:79: note: this is the location of the previous definition
+   79 | #define CAM_PIN_D1 5
+      | 
+C:/Users/zhaoy/Desktop/IoT/HMI OCR/camera_example/main/take_picture.c:103: warning: "CAM_PIN_D0" redefined
+  103 | #define CAM_PIN_D0 5
+      | 
+C:/Users/zhaoy/Desktop/IoT/HMI OCR/camera_example/main/take_picture.c:80: note: this is the location of the previous definition
+   80 | #define CAM_PIN_D0 4
+      | 
+[3/8] Linking C static library esp-idf\main\libmain.a
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable camera_example.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 25 ELF sections
+Successfully created esp32 image.
+Generated C:/Users/zhaoy/Desktop/IoT/HMI OCR/camera_example/build/camera_example.bin
+[7/8] cmd.exe /C "cd /D "C:\Users\zhaoy\Desktop\IoT\HMI OCR\camera_example\build\esp-idf\esptool_py" && C:\Users\zhaoy\.espressif\python_env\idf5.0_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.0.1/esp-idf/components/partition_table/check_sizes.py --offset 0x10000 partition --type app "C:/Users/zhaoy/Desktop/IoT/HMI OCR/camera_example/build/partition_table/partition-table.bin" "C:/Users/zhaoy/Desktop/IoT/HMI OCR/camera_example/build/camera_example.bin""
+camera_example.bin binary size 0xfab30 bytes. Smallest app partition is 0x100000 bytes. 0x54d0 bytes (2%) free.
+Warning: The smallest app partition is nearly full (2% free space left)!
+[7/8] cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.0.1\esp-idf\components\esptool_py && C:\Users\zhaoy\.espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/Espressif/frameworks/esp-idf-v5.0.1/esp-idf -D SERIAL_TOOL=C:/Users/zhaoy/.espressif/python_env/idf5.0_py3.11_env/Scripts/python.exe;;C:/Espressif/frameworks/esp-idf-v5.0.1/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D "WORKING_DIRECTORY=C:/Users/zhaoy/Desktop/IoT/HMI OCR/camera_example/build" -P C:/Espressif/frameworks/esp-idf-v5.0.1/esp-idf/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32 -p COM3 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 4MB 0x1000 bootloader/bootloader.bin 0x20000 camera_example.bin 0x10000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port COM3
+Connecting......
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 80:f3:da:5f:09:44
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00020000 to 0x0011afff...
+Flash will be erased from 0x00010000 to 0x00010fff...
+Compressed 28128 bytes to 17480...
+Writing at 0x00001000... (50 %)
+Writing at 0x0000784e... (100 %)
+Wrote 28128 bytes (17480 compressed) at 0x00001000 in 0.7 seconds (effective 301.5 kbit/s)...
+Hash of data verified.
+Compressed 1026864 bytes to 625355...
+Writing at 0x00020000... (2 %)
+Writing at 0x0002da3d... (5 %)
+Writing at 0x00038497... (7 %)
+Writing at 0x00040c55... (10 %)
+Writing at 0x00046570... (12 %)
+Writing at 0x00051299... (15 %)
+Writing at 0x00057292... (17 %)
+Writing at 0x0005e26e... (20 %)
+Writing at 0x00066294... (23 %)
+Writing at 0x0006c3ef... (25 %)
+Writing at 0x00072134... (28 %)
+Writing at 0x00078042... (30 %)
+Writing at 0x0007e100... (33 %)
+Writing at 0x000837c4... (35 %)
+Writing at 0x00088a79... (38 %)
+Writing at 0x0008dec7... (41 %)
+Writing at 0x0009333d... (43 %)
+Writing at 0x00098a48... (46 %)
+Writing at 0x0009e2a7... (48 %)
+Writing at 0x000a42b7... (51 %)
+Writing at 0x000a9cf0... (53 %)
+Writing at 0x000af7b1... (56 %)
+Writing at 0x000b5379... (58 %)
+Writing at 0x000bb214... (61 %)
+Writing at 0x000c1888... (64 %)
+Writing at 0x000c7318... (66 %)
+Writing at 0x000cd052... (69 %)
+Writing at 0x000d2a81... (71 %)
+Writing at 0x000d9226... (74 %)
+Writing at 0x000dec74... (76 %)
+Writing at 0x000e46fb... (79 %)
+Writing at 0x000ec8c3... (82 %)
+Writing at 0x000f622e... (84 %)
+Writing at 0x000fc66b... (87 %)
+Writing at 0x00103032... (89 %)
+Writing at 0x00108e9f... (92 %)
+Writing at 0x0010e8b4... (94 %)
+Writing at 0x001145f7... (97 %)
+Writing at 0x00119922... (100 %)
+Wrote 1026864 bytes (625355 compressed) at 0x00020000 in 14.8 seconds (effective 556.6 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 104...
+Writing at 0x00010000... (100 %)
+Wrote 3072 bytes (104 compressed) at 0x00010000 in 0.0 seconds (effective 502.6 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

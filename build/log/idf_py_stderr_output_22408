@@ -1,0 +1,29 @@
+CMake Error at C:/Users/zhaoy/.espressif/tools/cmake/3.24.0/share/cmake-3.24/Modules/CMakeTestCCompiler.cmake:69 (message):
+  The C compiler
+
+    "C:/Users/zhaoy/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc.exe"
+
+  is not able to compile a simple test program.
+
+  It fails with the following output:
+
+    Change Dir: C:/Users/zhaoy/Desktop/IoT/HMI OCR/build/CMakeFiles/CMakeTmp
+    
+    Run Build Command(s):C:/Users/zhaoy/.espressif/tools/ninja/1.10.2/ninja.exe cmTC_b1d28 && [1/2] Building C object CMakeFiles/cmTC_b1d28.dir/testCCompiler.c.obj
+    [2/2] Linking C executable cmTC_b1d28
+    FAILED: cmTC_b1d28 
+    cmd.exe /C "cd . && C:\Users\zhaoy\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe -mlongcalls -Wno-frame-address  CMakeFiles/cmTC_b1d28.dir/testCCompiler.c.obj -o cmTC_b1d28   && cd ."
+    c:/users/zhaoy/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/bin/ld.exe: cannot find CMakeFiles/cmTC_b1d28.dir/testCCompiler.c.obj: No such file or directory
+    collect2.exe: error: ld returned 1 exit status
+    ninja: build stopped: subcommand failed.
+    
+    
+
+  
+
+  CMake will not be able to correctly generate this project.
+Call Stack (most recent call first):
+  C:/Espressif/frameworks/esp-idf-v5.0.1/esp-idf/tools/cmake/project.cmake:342 (__project)
+  CMakeLists.txt:8 (project)
+
+
